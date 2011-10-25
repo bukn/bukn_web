@@ -1,0 +1,102 @@
+{% extends "lifetracer/base.html" %}
+{% block title %}user{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/static/user.css" type="text/css" />
+{% endblock %}
+{% block content %}
+<div id="main" class="main" style="/*background-color:yellow;*/">
+    <div id="headbar" class="headerbar trwhite" >
+        <span class="hi"> Hi, </span>
+        <span class="name"> {{ username }} </span>
+        this is the
+        <span class="ndays"> {{ ndays }} </span>
+        day in your life.
+        <span class="logout"> logout </span>
+    </div>
+    <div class="measure">
+        <div class="mb" >MEASURED BY</div>
+        <div class="mitem" >
+            <span>1000</span> days 
+            <div name="mitem" class="default" >default</div>
+        </div>
+        <div class="mitem">
+            <span>50</span> days
+            <div class="nodefault" >default</div>
+        </div>
+        <div class="mitem">
+            <span>1</span> day
+            <div class="nodefault" >default</div>
+        </div>
+    </div>
+    <div class="lifebar">
+        <div class="daybox"><div class="space left"></div><div class="dayfull passed"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull passed"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull passed"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull passed"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull passed"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull passing"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull future"></div><div class="space right"></div></div>
+    </div>
+    <div class="lifebar shadow">
+        <div class="daybox"><div class="space left"></div><div class="dayfull passedshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull passedshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull passedshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull passedshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull passedshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull passingshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+        <div class="daybox"><div class="space left"></div><div class="dayfull futureshadow"></div><div class="space right"></div></div>
+    </div>
+    <div id="bottom" style="/*display:none;*/">
+        <span>Copyright©2011-2011 by Bukn Z. All Rights Reserved</span>
+        <span style="display:none;">powered by </span>
+    </div>
+</div>
+{% endblock %}
+{% block js %}
+    <script type="text/javascript" src="/static/actions.js"> </script>
+    <script type="text/javascript" src="/static/jquery.js"> </script>
+    <script type="text/javascript">
+        $(document).ready(
+            function(){
+                var mdivs = $('div .mitem');
+                mdivs.bind({
+                    'mouseover': function(){$(this).addClass('mouseover')},
+                    'mouseleave': function(){$(this).removeClass('mouseover')},
+                    'click': function(){
+                        mdivs.removeClass('selected');
+                        $(this).addClass('selected');
+                    }
+                });
+            }
+        );
+    </script>
+{% endblock %}
+

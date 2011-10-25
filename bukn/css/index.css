@@ -1,0 +1,27 @@
+.ask{ width:960px; height:132px; padding-top:70px; color: #0019b2; font-size:60px; font-weight:900; }
+.ask .r { margin-left:14px; display:block-inline; }
+.ask .o { padding-left:40px; padding-top:60px; display:block-inline; }
+.ask .n { padding-left:178px; padding-top:42px; display:block-inline; }
+
+.buttons{ clear:both; margin-top:-50px; margin-left:65px; width:960px; height:140px; }
+.placeholder1{ height:140px; width: 250px; }
+.placeholder2{ height:43px; width: 225px; }
+#login_button{ height:140px; width:254px; font-size:63px; background: url("tylife-login-button.png") no-repeat; text-align:center; }
+#register_button{ height: 98px; width: 402px; font-size:55px; background: url("tylife-register-button.png") no-repeat; text-align:center; }
+#down{ display:none; font-size:28px; width:800px;*/ margin:0px auto; top:700px; color:yellow; padding: 0 80px; }
+#down a { color:red; }
+
+#bottom{ width:960px; text-align:center; padding-top:270px; font-size:18px; color:white; }
+
+#login_pop{ height:240px; margin:0 auto; background:url('trblack.png') repeat; color:red; width:500px; height:100%; font-size:30px; font-weight:700; display:none; position:relative; bottom:482px;}
+#login_pop p.close {padding:0; height:10px;}
+#login_pop p.close .fp {font-size:15px; padding:1px 1px; font-weight:100; color:blue; }
+#login_pop a { text-decoration:none; font-weight:300; font-size:30px; display:block; color:red;}
+#login_pop p {height:30px; width:100%; padding: 10px 0; text-align:center; background:transparent;}
+#login_pop input {font-size:30px; line-height:18px; text-align:center; width:403px; background:transparent; border:0; }
+#login_pop input.gray_prompt {font-style:italic; color:#5c5c30;}
+#login_pop input.gray {font-style:normal; color:#5c5c30;}
+#login_pop input.focus {font-style:normal; color:yellow;}
+#login_pop button { border:1px solid blue; background:url('trblue.png'); color:red; font-size:27px; font-weight:400;}
+#login_pop div.split {height:30px; width:100%; background:transparent; }
+

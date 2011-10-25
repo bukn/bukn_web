@@ -1,0 +1,17 @@
+/* init */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;}
+textarea, input, a {outline: medium none;}
+/* address, caption, cite, code, dfn, em, th, var, optgroup , b{font-style: normal;font-weight: normal;} */
+small {font-size: 12px;}
+ul, ol {list-style: none;}
+/* init end */
+
+body { margin:0; padding:0; border:0; background: url('tylife-background-v2.png') no-repeat center top; }
+.left { float:left; }
+.right { float:right; }
+.mono { font-family: Courier, "Courier New" monospace; }
+.btn { border:0 none; cursor:pointer; color:black; font-weight:900; }
+.main{ width: 960px; height: 100%; margin: 0 auto; }
+.banner { color: red; width:100%; margin-top: 20px; font-size: 70px; font-weight: 900; text-align:center; }
+.hidden { display:none; }

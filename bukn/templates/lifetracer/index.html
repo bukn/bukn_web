@@ -1,0 +1,45 @@
+{% extends "lifetracer/base.html" %}
+{% block title %}index{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/static/index.css" type="text/css" />
+{% endblock %}
+{% block content %}
+<div id="title" class="banner mono">Trace Your Life Now !</div>
+<div id="main" class="main">
+    <div class="mono ask">
+        <span class="r left" >Registered</span>
+        <span class="o left" >OR</span> 
+        <span class="n left" >Not</span>
+    </div>
+    <div class="buttons left">
+        <button id="login_button" class="btn mono left" > LOGIN </button>
+        <div class="placeholder1 left"></div>
+        <div class="placeholder2 left"></div>
+        <button id="register_button" class="btn mono" onclick="location.href='/rp/';"> Try It Now! </button>
+    </div>
+    <div id="bottom">
+        <span>Copyright©2011-2011 by Bukn Z. All Rights Reserved</span>
+        <span style="display:none;">powered by </span>
+    </div>
+</div>
+<div id="login_pop" >
+    <p class="close"><a class="fp left" href="/forget">[forget password]</a><a id="close_pop" href="javascript:void(0);" class="close right">x</a></p>
+    <div class="split" ></div>
+    <form name="form" id="login_form" class="mono" method="post" action="" onsubmit="return login();" > {% csrf_token %}
+        <p> <input name="username" type="text" value="email" /> </p>
+        <div class="split"></div>
+        <p id="password" >
+        <input name="password" type="password" />
+        <input name="password_text" type="text" value="your password" />
+        </p>
+        <div class="split"></div>
+        <p> <button class="btn mono" type="submit" href="javascript:void(0)" > GO! </button> </p>
+    </form>
+    <div class="split"></div>
+</div>
+{% endblock %}
+{% block js %}
+    <script type="text/javascript" src="/static/actions.js"> </script>
+    <script type="text/javascript" src="/static/index.js"> </script>
+{% endblock %}
+

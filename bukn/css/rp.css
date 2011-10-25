@@ -1,0 +1,10 @@
+.banner { color: red; width:100%; margin-top: 20px; font-size: 45px; font-weight: 900; text-align:center; }
+.main {background:transparent; width:960px;}
+.reg_need {}
+.reg_optional {width:300px; /*height:400px;*/ background:transparent;}
+#register_form p{color:red; font-size:30px; text-align:center; padding:4px 0;}
+#register_form p input{color:#5c5c30; font-size:30px; width: text-align:center; background:url('trblack.png'); border:0;}
+#register_form label {cursor:pointer;}
+#register_form label .cur {:pointer;}
+#register_form label input {display:none;}
+#register_form .submit {clear:both; width:100%;}

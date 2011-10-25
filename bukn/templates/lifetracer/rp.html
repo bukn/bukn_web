@@ -1,0 +1,37 @@
+{% extends "lifetracer/base.html" %}
+{% block title %}register{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="/static/rp.css" type="text/css" />
+{% endblock %}
+{% block content %}
+<div id="title" class="banner mono">Life Tracer Registering</div>
+<div id="main" class="main">
+    <form name="form" id="register_form" class="mono" method="post" action="" onsubmit="return register();" > {% csrf_token %}
+        <div class="left reg_need">
+            <p><input type="text" value="<  email  >"/></p>
+            <p><input type="text" value="<  password  >"/></p>
+            <p><input type="text" value="<  password repeat  >"/></p>
+            <p><input type="text" value="<  birthday  >"/></p>
+            <p>
+            <label id="male" >MALE<input type="radio" name="gender" value="1" /></label>
+            <label id="female">FEMALE<input type="radio" name="gender" value="-1" /></label>
+            </p>
+        </div>
+        <div class="right reg_optional">
+            <p><input type="textarea" value="<  self description  >"/></p>
+            <p><input type="text" value="<  password  >"/></p>
+        </div>
+        <div class="submit"><button class="btn mono" type="submit" href="javascript:void(0)" > Submit </button></div>
+    </form>
+</div>
+{% endblock %}
+{% block js %}
+<script type="text/javascript">
+    $(document).ready( function (){
+    });
+    function register() {
+        alert($('#register_form').serialize());
+        return false;
+    }
+</script>
+{% endblock %}

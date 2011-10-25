@@ -1,0 +1,32 @@
+.trwhite{ background: url('trwhite.png') repeat; }
+
+.headerbar { height:50px; color:#0019b2; font-size:20px; }
+.headerbar span { display:block-inline; }
+.headerbar .hi { margin-left:30px; }
+.headerbar .name { font-size:40px; color:yellow; }
+.headerbar .ndays { font-size:42px; color:red; }
+.headerbar .logout { margin-left:30px; color:#0019b2; font-size:26px; margin-top:13px; margin-right:13px; float:right; cursor:pointer; text-decoration:underline; }
+
+.measure { height:160px; width:300px; margin:0 auto; margin-top:100px; color:red;}
+.measure .mb { text-align:center; font-weight:600; padding: 0;}
+.measure .mitem { cursor:default; }
+.measure div { height:30px; font-size:20px; padding:10px 0 0 30px; }
+.measure div.mouseover { background:url('trblue.png') repeat; border: thin groove blue;}
+.measure div.selected { background:url('trblue2.png') repeat;}
+.measure div .default { height:22px; font-size:10px; color:yellow; float:right; padding:18px 20px 0 0;}
+.measure div .nodefault { clear:both; height:22px; font-size:10px; color:#959595; float:right; padding:18px 20px 0 0; cursor:pointer;}
+.measure span { color:red; }
+.measure form { color:#0019b2; }
+.measure input { }
+
+.lifebar { height:58px; margin-top:28px; cursor:pointer;}
+.lifebar.shadow{ margin-top:0; cursor:none;}
+.daybox { float:left; width:45px; height:58px; }
+.dayfull { width:37px; height:58px; }
+.dayfull.passed { background-color:red; }
+.dayfull.passedshadow { background:transparent url('shadow.png') repeat-x; }
+.daybox .space { width:4px; height:58px; }
+.dayfull.passing{ background:url('passing.png') repeat-x; }
+.dayfull.passingshadow{ background:url('passingshadow.png') repeat-x; }
+.dayfull.future{ background:url('future.png') repeat; }
+.dayfull.futureshadow{ background:url('futureshadow.png') repeat-x; }
